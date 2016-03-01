@@ -15,4 +15,6 @@ zuul:
   routes:
     cats:
       url: http://localhost:9000
+      path: /cats/**
+      stripPrefix: false
 debug: true
