@@ -17,3 +17,4 @@ zuul:
     cats:
       paths: /cats/**
       url: http://localhost:9000
+debug: true
