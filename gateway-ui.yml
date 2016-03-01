@@ -6,6 +6,13 @@ zuul:
   routes:
     cats:
       url: http://192.168.1.51:9000
+      path: /cats/**
+      stripPrefix: false
+    dogs:
+      url: http://192.168.1.51:9001
+      path: /dogs/**
+      stripPrefix: false
+
 ---
 spring:
   profiles: development
@@ -16,5 +23,9 @@ zuul:
     cats:
       url: http://localhost:9000
       path: /cats/**
+      stripPrefix: false
+    dogs:
+      url: http://localhost:9001
+      path: /dogs/**
       stripPrefix: false
 debug: true

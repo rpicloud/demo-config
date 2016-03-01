@@ -1,0 +1,10 @@
+configuration:
+  projectName: dog-service
+server:
+  port: 9001
+
+---
+spring:
+  profiles: development
+server:
+  port: 9001
