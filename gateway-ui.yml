@@ -5,9 +5,8 @@ server:
 zuul:
   routes:
     cats:
+      paths: /cats/**
       url: http://192.168.1.51:9000
-    dogs:
-      url: http://192.168.1.51:9001
 ---
 spring:
   profiles: development
@@ -16,6 +15,5 @@ server:
 zuul:
   routes:
     cats:
+      paths: /cats/**
       url: http://localhost:9000
-    dogs:
-      url: http://localhost:9001
