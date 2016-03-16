@@ -5,11 +5,11 @@ server:
 zuul:
   routes:
     cats:
-      url: http://192.168.1.31:9000
+      url: http://cat-service:9000
       path: /cats/**
       stripPrefix: false
     dogs:
-      url: http://192.168.1.31:9001
+      url: http://dog-service:9001
       path: /dogs/**
       stripPrefix: false
 
