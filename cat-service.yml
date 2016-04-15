@@ -8,3 +8,8 @@ spring:
   profiles: development
 server:
   port: 9000
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
