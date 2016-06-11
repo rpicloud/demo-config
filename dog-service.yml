@@ -1,7 +1,7 @@
 configuration:
   projectName: dog-service
 server:
-  port: 9001
+  port: 8080
 
 ---
 spring:
